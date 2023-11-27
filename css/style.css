@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box ;
+}
+#Preloader{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+#Preloader .loader{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px dotted red;
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+   
+}
+@keyframes loader{
+    from{
+        transform: rotate(0deg) skew(45deg);
+    }
+    to{
+        transform: rotate(360deg) skew(90deg);
+    }
+}
